@@ -1,0 +1,63 @@
+# Dependências do Node.js
+node_modules/
+
+# Configurações do Expo
+.expo/
+dist/
+web-build/
+
+# Pastas nativas geradas pelo Expo Prebuild
+/ios
+/android
+
+# Arquivos de Build/APK Locais
+*.apk
+*.aab
+*.ipa
+
+# Variáveis de Ambiente e chaves locais
+.env
+.env.*
+.env*.local
+!.env.example
+
+# IDE e Configurações de Editor
+.vscode/
+.idea/
+*.suo
+*.sln
+*.swp
+*.code-workspace
+.DS_Store
+
+# Logs e depuração
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.metro-health-check*
+
+# Tipagem TypeScript
+*.tsbuildinfo
+
+# Artefatos nativos e keystores (segurança)
+.kotlin/
+*.orig.*
+*.jks
+*.keystore
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+
+# Scripts locais de simulação
+pseudo_backend.js
+
+# Documentações MS Word e Pastas antigas
+/arquivos usados
+*.docx
+*.pdf
+
+# Configuração de tipos temporário do Expo
+expo-env.d.ts
