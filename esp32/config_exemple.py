@@ -8,6 +8,6 @@ WIFI_SSID = "NOEM_DA_REDE"
 WIFI_PASSWORD = "SENHA"
 
 # API
-API_URL = "http://IP:8000/api/leituras"
+API_URL = "http://SEUIP:8000/api/leituras"
 DEVICE_ID = "esp32-estufa-01"
 READ_INTERVAL_SECONDS = 10

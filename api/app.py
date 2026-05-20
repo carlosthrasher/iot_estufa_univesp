@@ -327,7 +327,18 @@ def get_latest_reading():
     return serialize_doc(doc)
 
 
-w
+@app.get("/api/leituras/historico")
+def get_readings_history(limit: int = Query(default=20, ge=1, le=500)):
+    cursor = readings_collection.find().sort("timestamp", -1).limit(limit)
+
+    items = []
+    for doc in cursor:
+        items.append(serialize_doc(doc))
+
+    return {
+        "total": len(items),
+        "items": items
+    }
 
 
 @app.get("/api/alertas")
